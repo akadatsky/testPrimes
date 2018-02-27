@@ -8,6 +8,7 @@ public class Main {
 
     private static boolean isPrime(int number) {
         // there will be cool code
+        // one mo cool comment
         return false;
     }
 
