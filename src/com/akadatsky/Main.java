@@ -7,10 +7,12 @@ public class Main {
     }
 
     private static boolean isPrime(int number) {
-        // there will be cool code
-        // one mo cool comment
-        // one one more comment
-        return false;
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
+                return false;
+                break;
+            }
+        }
+        return true;
     }
-
 }
