@@ -2,15 +2,25 @@ package com.akadatsky;
 
 public class Main {
 
+    private static final long TEST_NUMBER = 2971215073L;
+
     public static void main(String[] args) {
-        System.out.println("Test Primes");
-        System.out.println("Test number 13: " + isPrime(13));
-        System.out.println("Test number 15: " + isPrime(15));
+        long time = System.currentTimeMillis();
+        System.out.println("Test number: " + TEST_NUMBER + ", " + isPrime(TEST_NUMBER));
+        time = System.currentTimeMillis() - time;
+        System.out.println("Time: " + time / 1000.0);
     }
 
-    private static boolean isPrime(int number) {
-        for (int i = 2; i < number; i++) {
+    private static boolean isPrime(long number) {
+        if (number == 2) {
+            return true;
+        }
+        if (number % 2 == 0) {
+            return false;
+        }
+        for (long i = 2; i < number; i++) {
             if (number % i == 0) {
+                System.out.println("div: " + i);
                 return false;
             }
         }
