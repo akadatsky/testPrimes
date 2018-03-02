@@ -18,7 +18,7 @@ public class Main {
         if (number % 2 == 0) {
             return false;
         }
-        for (long i = 2; i < number; i++) {
+        for (long i = 3; i < number; i+=2) {
             if (number % i == 0) {
                 System.out.println("div: " + i);
                 return false;
