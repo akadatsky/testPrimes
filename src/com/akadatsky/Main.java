@@ -1,5 +1,7 @@
 package com.akadatsky;
 
+// Optimized program!
+
 public class Main {
 
     private static final long TEST_NUMBER = 2971215073L;
